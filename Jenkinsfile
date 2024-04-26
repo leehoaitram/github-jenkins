@@ -27,7 +27,7 @@ pipeline {
             post {
                 success {
                     emailext (  
-                         to: 'leehoaitram@example.com',
+                         to: 'leehoaitram@gmail.com',
                          subject: 'Success: Security Scan Completed',
                          body: 'The security scan completed successfully.',
                          attachLog: true
@@ -35,7 +35,7 @@ pipeline {
                 }
                 failure {
                     emailext ( 
-                         to: 'leehoaitram@example.com',
+                         to: 'leehoaitram@gmail.com',
                          subject: 'Failure: Security Scan Failed',
                          body: 'The security scan failed. See attached logs for details.',
                          attachLog: true
@@ -57,7 +57,7 @@ pipeline {
             post {
                 success {
                     emailext (
-                         to: 'leehoaitram@example.com',
+                         to: 'leehoaitram@gmail.com',
                          subject: 'Success: Integration Tests on Staging Completed',
                          body: 'Integration Tests on Staging completed successfully.',
                          attachLog: true
@@ -65,7 +65,7 @@ pipeline {
                 }
                 failure {
                     emailext ( 
-                         to: 'leehoaitram@example.com',
+                         to: 'leehoaitram@gmail.com',
                          subject: 'Failure: Integration Tests on Staging Failed',
                          body: 'Integration Tests on Staging failed. See attached logs for details.',
                          attachLog: true
